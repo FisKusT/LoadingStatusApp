@@ -1,0 +1,23 @@
+<resources>
+    <style name="Theme.LoadingStatusApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="RadioButton" >
+        <item name="android:layout_marginStart">@dimen/normal_margin</item>
+        <item name="android:layout_marginEnd">@dimen/normal_margin</item>
+        <item name="android:layout_marginBottom">@dimen/normal_margin</item>
+    </style>
+    <style name="ActionButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_margin">@dimen/normal_margin</item>
+    </style>
+
+
+</resources>

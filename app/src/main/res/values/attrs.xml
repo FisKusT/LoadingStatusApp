@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingButton">
+        <!--valid values are 0-360-->
+        <attr name="circleFillDegree" format="integer"/>
+        <!--Valid values are 0-100-->
+        <attr name="rectangleFillPercentage" format="integer"/>
+    </declare-styleable>
+</resources>

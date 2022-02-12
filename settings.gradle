@@ -1,0 +1,2 @@
+rootProject.name = "Loading Status App"
+include ':app'

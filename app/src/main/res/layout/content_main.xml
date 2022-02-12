@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main">
+
+    <RadioGroup
+        android:id="@+id/downloadRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/radio_button_1"
+        app:layout_constraintBottom_toTopOf="@+id/download_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_glide_selection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/glide_selection"
+            style="@style/RadioButton"/>
+
+        <RadioButton
+            android:id="@+id/radio_load_app_selection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/load_app_selection"
+            style="@style/RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radio_retrofit_selection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/retrofit_selection"
+            style="@style/RadioButton"/>
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_download"
+        android:contentDescription="@string/download_image_cd"/>
+
+    <com.fiskus.loadingstatusapp.ui.views.LoadingButton
+        android:id="@+id/download_button"
+        style="@style/ActionButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
